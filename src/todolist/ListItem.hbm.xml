@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 3, 2019 10:44:37 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="todolist.ListItem" table="itemlist">
+        <id name="itemID" type="int" access="field">
+            <column name="ITEMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="itemDesc" type="java.lang.String">
+            <column name="ITEMDESC" />
+        </property>
+    </class>
+</hibernate-mapping>
